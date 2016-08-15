@@ -1,0 +1,42 @@
+<div class="container">
+	<div class="page-header">
+		<h1 class="edp-inline-block">Enable / Disable Web Services</h1>
+		<h3 class="edp-inline-block pull-right">
+			Hi {{userDetails.name}}
+			<button type="button" class="btn btn-info" ng-click="doLogout()">Logout</button>
+		</h3>
+	</div>
+	
+	<div class="col-xs-12">
+		<div class="col-xs-6"> 
+			<label>List Of Projects</label>
+			<div class="grid-data">
+				<div class="col-xs-12 grid-row" ng-class-odd="'odd-row'" ng-class-even="'even-row'" ng-repeat="proj in projectDetails">
+					<div class="col-xs-8">
+						{{proj.projectName}}
+					</div>
+					<div class="col-xs-4">
+						<button type="button" class="btn btn-success pull-right" ng-click="getWebService(proj.projectName)">Get Services</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<label class="service-header">List Of Projects Webservices</label>
+			<div class="grid-data">
+				<div class="col-xs-12 grid-row pull-right" ng-class-odd="'odd-row'" ng-class-even="'even-row'" ng-repeat="service in serviceDetails">			
+					<div class="col-xs-8">
+						{{service.serviceName}}
+					</div>
+					<div class="col-xs-4">
+						<button ng-if="service.isEnable" type="button" class="btn btn-success pull-right" ng-click="service.isEnable = !service.isEnable">Enable</button>
+						<button ng-if="!service.isEnable" type="button" class="btn btn-danger pull-right" ng-click="service.isEnable = !service.isEnable">Disable</button>
+					</div>
+				</div>
+			</div>
+			<div ng-if="serviceDetails.length" class="col-xs-12">
+				<button type="button" class="btn btn-primary pull-right ws-submit" ng-click="enableWebService()">Submit</button>
+			</div>
+		</div>
+	</div>
+</div>

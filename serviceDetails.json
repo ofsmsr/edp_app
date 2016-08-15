@@ -1,0 +1,64 @@
+{	"status": "OK",
+	"result": [
+		{
+			"serviceName": "service 1",
+			"isEnable": false
+		},
+		{
+			"serviceName": "service 2",
+			"isEnable": false
+		},
+		{
+			"serviceName": "service 3",
+			"isEnable": false
+		},
+		{
+			"serviceName": "service 4",
+			"isEnable": false
+		},
+		{
+			"serviceName": "service 5",
+			"isEnable": false
+		},
+		{
+			"serviceName": "service 1",
+			"isEnable": false
+		},
+		{
+			"serviceName": "service 2",
+			"isEnable": false
+		},
+		{
+			"serviceName": "service 3",
+			"isEnable": false
+		},
+		{
+			"serviceName": "service 4",
+			"isEnable": false
+		},
+		{
+			"serviceName": "service 5",
+			"isEnable": false
+		},
+		{
+			"serviceName": "service 1",
+			"isEnable": false
+		},
+		{
+			"serviceName": "service 2",
+			"isEnable": false
+		},
+		{
+			"serviceName": "service 3",
+			"isEnable": false
+		},
+		{
+			"serviceName": "service 4",
+			"isEnable": false
+		},
+		{
+			"serviceName": "service 5",
+			"isEnable": false
+		}
+	]
+}

@@ -1,0 +1,46 @@
+/*!
+* EDP App Css
+*/
+.make-center {
+	margin: 0 auto;
+	float: none;
+	position: relative;
+    top: 150px;
+}
+
+.edp-inline-block {
+	display: inline-block;
+}
+
+.grid-row {
+	border: 1px solid gray;
+	padding: 5px 10px;
+	border-radius: 10px;
+}
+
+.odd-row {
+	background-color: #eeeeee;
+}
+
+.even-row {
+	background-color: #ffffff;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.service-header {
+	margin-left: 5%;
+}
+
+.ws-submit {
+	margin-top: 5%;
+    margin-right: 1%;
+    padding: 6px 20px;
+}
+
+.grid-data {
+	overflow: auto;
+    max-height: 500px;
+}
